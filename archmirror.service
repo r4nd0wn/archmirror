@@ -1,0 +1,8 @@
+[Unit]
+Description=running archmirror sync
+[Service]
+User=mirror
+Type=simple
+ExecStart=/home/mirror/scripts/mirrorsync.sh
+[Install]
+WantedBy=multi-user.target

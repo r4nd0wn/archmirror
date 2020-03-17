@@ -1,0 +1,8 @@
+[Unit]
+Description=run archmirror sync every hour
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+Unit=archmirror.service
+[Install]
+WantedBy=multi-user.target
